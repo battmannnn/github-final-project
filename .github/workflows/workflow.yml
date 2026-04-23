@@ -1,24 +1,8 @@
-name: CI
+- name: Install dependencies
+  run: pip install flake8 nose
 
-on: [push]
+- name: Lint with flake8
+  run: flake8 .
 
-jobs:
-  build:
-    runs-on: ubuntu-latest
-
-    steps:
-    - uses: actions/checkout@v3
-
-    - name: Set up Python
-      uses: actions/setup-python@v4
-      with:
-        python-version: '3.x'
-
-    - name: Install dependencies
-      run: pip install flake8
-
-    - name: Lint with flake8
-      run: flake8 .
-
-    - name: Run unit tests
-      run: python3 -m unittest
+- name: Run unit tests with nose
+  run: nosetests
