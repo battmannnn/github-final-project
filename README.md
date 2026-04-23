@@ -1,4 +1,4 @@
-# Simple Interest Calculator
+# ci-cd-final-project
 
 This project calculates simple interest using a shell script.
 
