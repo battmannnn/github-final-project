@@ -1,1 +1,10 @@
-# -github-final-project
+# Simple Interest Calculator
+
+This project calculates simple interest using a shell script.
+
+## Formula:
+SI = (P × R × T) / 100
+
+## Technologies:
+- Bash scripting
+- Linux commands
